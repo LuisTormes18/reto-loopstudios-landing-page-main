@@ -4,6 +4,7 @@
 /* @import url("https://fonts.google.com/specimen/Josefin+Sans"); */
 /* atribution ----------------------------------------------------------------*/
 .attribution {
+  display:block;
   font-size: 16px;
   text-align: right;
   color: var(--Dark-Gray);
@@ -11,6 +12,18 @@
 .attribution a {
   text-decoration: none;
   color: var(--Dark-Gray);
+  
+}
+@media(max-width:780px){
+  .attribution{
+    width:100%;
+    height:auto;
+    text-align: center;
+  }
+  .attribution span{
+    padding:10%;
+  }
+
 }
 /* general ------------------------------------------------------------------- */
 * {
@@ -23,12 +36,13 @@
   --Very-Dark-Gray: hsl(0, 0%, 41%);
   --seudoVisibility: hidden;
 }
+html,body{
+  overflow-x: hidden;
+}
 body {
   font-size: 15px;
   box-sizing: border-box;
   font-family: Alata;
-
-  overflow-x: hidden;
 }
 /* session 1------------------------------------------------------------ */
 .session-1 {
@@ -95,7 +109,6 @@ body {
   }
   .navbar {
     padding: 0px 5%;
-
     flex-direction: column;
   }
   .navbar-logo {
@@ -105,18 +118,22 @@ body {
     visibility: hidden;
     height: 100vh;
     position: absolute;
+    top:0;
+    right:0px;
     display: block;
     background: var(--Black);
     padding: 100px 10%;
+    overflow-y:hidden;
   }
   .navbar-menu > li {
     width: 50%;
     text-align: left;
     margin: 20px 0;
+    padding-left:5%;
   }
   .navbar-menu > li > a {
     padding: 10px 40px;
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 .hero {
