@@ -28,13 +28,3 @@ mq.addListener((mql) => {
   }
 });
 
-// // cambiar imagenes
-// const mediaImg = matchMedia("(max-width:790px)");
-// mediaImg.addListener((mql) => {
-//   if (mql.matches) {
-//     alert(mq.matches)
-//     document
-//       .getElementById("img-3")
-//       .setAttribute("src", "./images/mobile/image-soccer-team.jpg");
-//   }
-// });
