@@ -27,6 +27,8 @@ body {
   font-size: 15px;
   box-sizing: border-box;
   font-family: Alata;
+
+  overflow-x: hidden;
 }
 /* session 1------------------------------------------------------------ */
 .session-1 {
